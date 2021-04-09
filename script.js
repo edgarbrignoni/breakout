@@ -5,6 +5,7 @@ const blockHeight = 20
 const ballDiameter = 20
 const boardWidth = 560
 const boardHeight = 300
+const speed = 20
 let timerId
 let xDirection = -2
 let yDirection = 2
@@ -112,7 +113,7 @@ function moveBall() {
     checkForCollision()
 }
 
-timerId = setInterval(moveBall, 10)
+timerId = setInterval(moveBall, speed)
 
 //check for collisions
 function checkForCollision() {
